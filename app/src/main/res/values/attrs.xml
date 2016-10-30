@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="rightPadding" format="dimension"/>
+    <declare-styleable name="SlidingMenu">
+        <attr name="rightPadding"/>
+    </declare-styleable>
+
+    <attr name="radius" format="dimension"/>
+    <attr name="src" format="reference"/>
+    <declare-styleable name="CircleImageView">
+        <attr name="radius"/>
+        <attr name="src"/>
+    </declare-styleable>
+
+    <attr name="count" format="integer"/>
+    <attr name="color_text_normal" format="color"/>
+    <attr name="color_text_chose" format="color"/>
+    <attr name="textSize" format="integer"/>
+    <attr name="type" format="enum">
+        <enum name="line" value="1"/>
+        <enum name="triangle" value="2"/>
+    </attr>
+    <declare-styleable name="ViewPagerIndicator">
+        <attr name="count"/>
+        <attr name="type"/>
+        <attr name="color_text_chose"/>
+        <attr name="color_text_normal"/>
+        <attr name="textSize"/>
+    </declare-styleable>
+</resources>

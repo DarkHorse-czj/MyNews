@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10">
+
+    <RelativeLayout
+        android:id="@+id/rl_user_info"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:gravity="center"
+        android:padding="20dp">
+
+        <ImageView
+            android:id="@+id/iv_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:src="@mipmap/ic_launcher"/>
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/iv_icon"
+            android:text="张三"
+            android:textColor="@color/ivory_black"
+            android:textSize="@dimen/text_size_h2"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tv_integral_defalut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_name"
+            android:layout_toRightOf="@id/iv_icon"
+            android:text="积分:"
+            android:textSize="@dimen/text_size_h3"/>
+
+        <TextView
+            android:id="@+id/tv_integral"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_name"
+            android:layout_toRightOf="@id/tv_integral_defalut"
+            android:text="100"
+            android:textSize="@dimen/text_size_h4"/>
+
+        <ImageView
+            android:id="@+id/iv_qr_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/ic_qr_code"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_icon"
+            android:text=""
+            android:textSize="@dimen/text_size_h2"/>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_integral_defalut"
+            android:layout_marginTop="5dp"
+            android:drawableLeft="@mipmap/ic_signature"
+            android:drawablePadding="10dp"
+            android:text="Let bygones be bygones!"
+            android:textColor="@color/grey"
+            android:textSize="@dimen/text_size_h3"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7"
+        android:background="@color/sky_blue">
+
+        <ListView
+            android:id="@+id/lv_operation"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/ll_operation"
+            android:paddingBottom="15dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="20dp"></ListView>
+
+        <LinearLayout
+            android:id="@+id/ll_operation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/btn_setting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="50dp"
+                android:drawableLeft="@mipmap/ic_setting"
+                android:text="设置"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_h3"/>
+
+            <TextView
+                android:id="@+id/btn_night"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@mipmap/ic_moon"
+                android:drawablePadding="5dp"
+                android:text="夜间"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_h3"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>
